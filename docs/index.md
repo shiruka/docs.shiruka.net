@@ -1,1 +1,0 @@
-# Shiru ka
