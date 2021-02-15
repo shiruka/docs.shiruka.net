@@ -1,2 +1,46 @@
+docs_dir: docs
+
+# Project information
 site_name: Shiru ka
-theme: readthedocs
+site_url: http://www.shiruka.net
+site_description: Shir uka Documentation.
+site_author: Shiru ka
+
+# Repository
+repo_url: https://github.com/shiruka/docs.shiruka.net
+
+# Copyright
+copyright: Copyright &copy; 2021 <a href="http://www.shiruka.net">Shiru ka</a>.
+
+theme:
+  name: 'readthedocs'
+  logo: 'images/SHIRUKA.png'
+  features:
+    - toc.integrate
+
+extra:
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        tr: "Turkish"
+        en: "English"
+      default_language: 'en'
+
+nav:
+- index.md
+- index.tr.md
